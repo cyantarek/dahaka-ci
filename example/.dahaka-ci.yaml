@@ -1,0 +1,19 @@
+image: golang:1.18
+
+steps:
+  - init
+  - build
+  - test
+
+init:
+  execute:
+    - echo "This is an init step"
+    - go version
+
+build:
+  execute:
+    - echo "This is a build step"
+
+test:
+  execute:
+    - echo "This is a test step
